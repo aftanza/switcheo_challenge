@@ -15,12 +15,12 @@ const FormPage = () => {
         >
             <div className={`flex items-center justify-center space-x-2 pt-4`}>
                 <Switch
-                    id="airplane-mode"
+                    id="dark-mode"
                     onCheckedChange={(checked) => {
                         setDark(checked);
                     }}
                 />
-                <Label htmlFor="airplane-mode">Dark Mode</Label>
+                <Label htmlFor="dark-mode">Dark Mode</Label>
             </div>
 
             <div className={`flex min-h-screen justify-center mt-28 `}>

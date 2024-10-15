@@ -29,7 +29,6 @@ type InputBlockProps = {
     type: "sell" | "buy";
     tokenSwapState: TokenSwapState;
     setTokenSwapState: Dispatch<SetStateAction<TokenSwapState>>;
-    decimalPlaces: number;
 };
 
 import Image from "next/image";
@@ -39,7 +38,6 @@ const InputBlock = ({
     type,
     tokenSwapState,
     setTokenSwapState,
-    decimalPlaces,
 }: InputBlockProps) => {
     const prices = usePriceContext();
     const [dialogOpen, setDialogOpen] = useState<boolean>(false);
@@ -88,7 +86,7 @@ const InputBlock = ({
                     ? (amount * buyPrice) / sellPrice
                     : (amount * sellPrice) / buyPrice;
 
-            const formattedPrice = newPrice.toFixed(8);
+            const formattedPrice = newPrice.toFixed(4);
 
             const otherKey = key === "sell" ? "buy" : "sell";
 

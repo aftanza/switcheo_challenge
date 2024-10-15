@@ -48,14 +48,12 @@ const Swap = () => {
                     type={"sell"}
                     tokenSwapState={tokenSwapState}
                     setTokenSwapState={setTokenSwapState}
-                    decimalPlaces={4}
                 />
                 {/* <div className="flex justify-center">{Arrow}</div> */}
                 <InputBlock
                     type={"buy"}
                     tokenSwapState={tokenSwapState}
                     setTokenSwapState={setTokenSwapState}
-                    decimalPlaces={8}
                 />
             </CardContent>
             <CardFooter>

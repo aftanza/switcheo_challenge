@@ -1,16 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
-import InputBlock from "./_components/inputBlock";
-import { createContext, ReactElement, useEffect, useState } from "react";
+import { Card } from "@/components/ui/card";
+import { ReactElement, useEffect, useState } from "react";
 import Swap from "./swap";
 import Limit from "./limit";
 import Send from "./send";
