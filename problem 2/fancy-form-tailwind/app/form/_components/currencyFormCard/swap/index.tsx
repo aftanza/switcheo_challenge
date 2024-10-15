@@ -8,8 +8,6 @@ import InputBlock from "../_components/inputBlock";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-import { usePriceContext } from "../utils/hooks";
-
 export type TokenSwapState = {
     sell: {
         token: string | null;
@@ -24,8 +22,6 @@ export type TokenSwapState = {
 };
 
 const Swap = () => {
-    const prices = usePriceContext();
-
     const initialState: TokenSwapState = {
         sell: {
             token: "ETH",

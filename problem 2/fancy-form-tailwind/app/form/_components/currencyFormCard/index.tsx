@@ -22,7 +22,7 @@ export type ParsedPrice = Price & {
     parsedDate: Date;
 };
 
-export default function CurrencyFormCard({ className, ...props }: CardProps) {
+export default function CurrencyFormCard({ ...props }: CardProps) {
     const tabs = [
         {
             name: "Swap",
@@ -84,9 +84,7 @@ export default function CurrencyFormCard({ className, ...props }: CardProps) {
             }
         });
 
-        return Array.from(cleanedData.values()).map(
-            ({ parsedDate, ...rest }) => rest
-        );
+        return Array.from(cleanedData.values()).map(({ ...rest }) => rest);
     };
 
     useEffect(() => {

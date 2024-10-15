@@ -2,17 +2,15 @@ import { Input } from "@/components/ui/input";
 import Arrow from "../../../arrow/arrow";
 import { Button } from "@/components/ui/button";
 import { usePriceContext } from "../../utils/hooks";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 import {
     Command,

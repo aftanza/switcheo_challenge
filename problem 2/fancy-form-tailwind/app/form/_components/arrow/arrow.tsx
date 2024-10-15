@@ -1,7 +1,3 @@
-type ArrowType = {
-    size?: number;
-};
-
 const Arrow = () => {
     return (
         <svg
